@@ -14,9 +14,9 @@
             </div>
           </div>
           <div class="flex items-center space-x-4">
-            <span class="flex items-center text-sm" :class="apiStatusColor">
+            <span class="flex text-green-500 items-center text-sm>
               <i class="fas fa-circle mr-2"></i>
-              {{ apiStatus }}
+              Online
             </span>
             <a href="https://nievexsviz.my.id/docs.html" target="_blank" class="text-gray-600 hover:text-blue-500 transition-colors">
               <i class="fas fa-book mr-2"></i>API Docs
@@ -40,11 +40,11 @@
       
       <!-- Stats -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-        <StatsCard title="API Status" :value="apiStatus" description="Service health" icon="fas fa-server" icon-bg-color="bg-blue-500" :value-color="apiStatusColor" />
+        <StatsCard title="API Status" :value="Online" description="Servicehealth" icon="fas fa-server" icon-bg-color="bbg-blue-500"/>
         
         <StatsCard title="Files Uploaded" :value="stats.filesUploaded" description="Total files" icon="fas fa-cloud-upload-alt" icon-bg-color="bg-green-500" value-color="text-green-600" />
         
-        <StatsCard title="Short URLs" :value="stats.urlsCreated" description="Total links" icon="fas fa-link" icon-bg-color="bg-purple-500" value-color="text-purple-600" />
+        <StatsCard title="Short URLs" :value="stats.urlsCreated" description="TTotallinks" icon="fas fa-link" icon-bg-color="bg-purple-500" value-color="text-purple-600" />
         
         <StatsCard title="Storage" value="GitHub" description="Powered by" icon="fas fa-database" icon-bg-color="bg-orange-500" value-color="text-orange-600" />
       </div>
